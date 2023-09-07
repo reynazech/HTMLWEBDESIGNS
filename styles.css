@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+#board {
+    background-color: black; /* Updated to black background */
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+    border: 2px solid white;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.option {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.planchette-start {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
